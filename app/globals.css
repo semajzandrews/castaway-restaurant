@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+/* Castaway · nautical coastal + dock-board menu */
+@theme {
+  --color-deep:     #0E2436;     /* deep sea navy */
+  --color-deep-2:   #142C40;
+  --color-rope:     #C8A678;     /* rope tan */
+  --color-seafoam:  #88B5A3;
+  --color-lobster:  #C2452D;
+  --color-kraft:    #EFE2C2;     /* kraft paper */
+  --color-kraft-2:  #DDCEA7;
+  --color-rule:     #B49F7A;
+  --color-rule-2:   #8A7551;
+
+  --font-display: "Abril Fatface", Georgia, ui-serif, serif;
+  --font-body:    "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-script:  "Caveat", cursive;
+}
+
+@layer base {
+  :root {
+    --deep:#0E2436; --deep-2:#142C40; --rope:#C8A678; --seafoam:#88B5A3;
+    --lobster:#C2452D; --kraft:#EFE2C2; --kraft-2:#DDCEA7;
+    --rule:#B49F7A; --rule-2:#8A7551;
+  }
+  html, body {
+    background: var(--kraft);
+    color: var(--deep);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: var(--lobster); color: var(--kraft); }
+}
+
+.kraft-grain {
+  background-image:
+    radial-gradient(rgba(14,36,54,0.04) 1px, transparent 1px),
+    radial-gradient(rgba(194,69,45,0.03) 1px, transparent 1.5px);
+  background-size: 4px 4px, 7px 7px;
+}
+
+.rope-rule {
+  height: 6px;
+  background-image: repeating-linear-gradient(45deg, var(--rope) 0 4px, transparent 4px 8px, var(--rope) 8px 12px);
+}
+
+.dock-board {
+  background: var(--deep);
+  background-image:
+    linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+    repeating-linear-gradient(180deg, transparent 0 38px, rgba(255,255,255,0.06) 38px 40px);
+}
+
+@keyframes sway-rope { 0%,100% { transform: rotate(-2deg); } 50% { transform: rotate(2deg); } }
+.sway-rope { animation: sway-rope 5s ease-in-out infinite; transform-origin: 50% 0; }
+
+.tabnum { font-variant-numeric: tabular-nums; }
+.font-display { font-family: var(--font-display); font-weight: 400; }
+.font-script  { font-family: var(--font-script); font-weight: 700; }

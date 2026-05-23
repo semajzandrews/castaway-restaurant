@@ -8,7 +8,7 @@ export default function Footer() {
           Steaks, seafood, cocktails. 284 Watchung Ave, Orange NJ. Eight hundred reviews and counting.
         </p>
         <div className="rope-rule mt-10"/>
-        <div className="mt-4 font-script text-xl text-rope">built · bysemaj.com</div>
+        <div className="mt-4 font-script text-xl text-rope"><a href="https://bysemaj.com" target="_blank" rel="noreferrer" className="underline-offset-4 hover:underline transition-opacity hover:opacity-80">built · bysemaj.com</a></div>
       </div>
     </footer>
   );

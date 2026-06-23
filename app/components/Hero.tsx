@@ -6,7 +6,7 @@ export default function Hero() {
     <section id="top" className="relative pt-36 md:pt-48 pb-16 md:pb-24">
       <div className="rope-rule mb-12"/>
       <div className="mx-auto max-w-[1380px] px-6 md:px-10">
-        <div className="grid grid-cols-12 gap-8 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-y-8 md:gap-x-8 items-center">
           <div className="col-span-12 md:col-span-7">
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8 }} className="font-script text-3xl text-lobster sway-rope inline-block">
               washed ashore in 1998.

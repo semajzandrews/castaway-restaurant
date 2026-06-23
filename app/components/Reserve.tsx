@@ -5,7 +5,7 @@ export default function Reserve() {
   return (
     <section id="hours" className="py-20 md:py-28">
       <div className="rope-rule mb-12"/>
-      <div className="mx-auto max-w-[1200px] px-6 md:px-10 grid grid-cols-12 gap-10">
+      <div className="mx-auto max-w-[1200px] px-6 md:px-10 grid grid-cols-1 md:grid-cols-12 gap-y-10 md:gap-x-10">
         <div className="col-span-12 md:col-span-5">
           <div className="font-script text-3xl text-lobster">— drop anchor —</div>
           <h2 id="reserve" className="mt-2 font-display text-[clamp(2.5rem,6vw,5.5rem)] text-deep leading-[0.95]">
